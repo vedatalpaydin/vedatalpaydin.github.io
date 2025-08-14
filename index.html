@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krafters Games</title>
+  <meta name="description" content="Casual puzzle games by Krafters Games." />
+
+  <style>
+    :root{
+      --bg:#0f172a;        /* arka plan */
+      --card:#111827;      /* kart rengi */
+      --text:#e5e7eb;      /* metin */
+      --muted:#9ca3af;     /* ikincil metin */
+      --accent:#38bdf8;    /* vurgu rengi */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: linear-gradient(180deg,#0b1224 0%,#0f172a 100%);
+      color:var(--text);
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      padding:12px 0;
+    }
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+    .brand .logo{
+      width:40px;height:40px;border-radius:12px;
+      background:linear-gradient(135deg,#38bdf8,#22d3ee);
+      display:grid;place-items:center;font-weight:700;color:#002b36;
+      box-shadow:0 6px 18px rgba(34,211,238,.25);
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    nav a:hover{color:var(--text)}
+    .hero{
+      margin:40px 0 28px;background:linear-gradient(135deg,#1f2937 0%,#111827 60%);
+      border:1px solid #1f2937;border-radius:20px;padding:32px;box-shadow:
+      0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    .title{font-size:clamp(28px,4.2vw,44px);line-height:1.1;margin:0 0 10px}
+    .subtitle{color:var(--muted);font-size:clamp(14px,2.5vw,18px);margin:0 0 18px}
+    .cta{
+      display:inline-block;padding:12px 18px;border-radius:12px;
+      background:var(--accent);color:#031b22;text-decoration:none;font-weight:700;
+      box-shadow:0 8px 24px rgba(56,189,248,.35);
+    }
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:26px 0}
+    .card{
+      background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:18px;
+      box-shadow:0 4px 16px rgba(0,0,0,.2);
+    }
+    .card h3{margin:0 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .links a{display:inline-block;margin-right:12px;margin-top:8px;color:var(--accent);text-decoration:none}
+    footer{margin:28px 0 10px;color:var(--muted);font-size:13px;text-align:center}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">
+        <div class="logo">KG</div>
+        <strong>Krafters Games</strong>
+      </a>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="/support.html">Support</a>
+        <a href="/privacy-policy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="title">Smart, tiny & fun puzzle games.</h1>
+      <p class="subtitle">We craft bite-size logic games with smooth UX and respectful monetization.</p>
+      <a class="cta" href="#games">See our games ↓</a>
+    </section>
+
+    <section id="games" class="grid">
+      <article class="card">
+        <h3>Seat Sorting Puzzle!</h3>
+        <p>Arrange passengers and solve seat puzzles. iOS version live.</p>
+        <div class="links">
+          <!-- App Store linkini buraya koy -->
+          <a href="#" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Privacy Policy</h3>
+        <p>How we handle data and ads.</p>
+        <div class="links">
+          <a href="/privacy-policy.html">Read policy</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Support</h3>
+        <p>Need help or have feedback? Reach us anytime.</p>
+        <div class="links">
+          <a href="/support.html">Contact</a>
+          <a class="mono" href="/app-ads.txt">app-ads.txt</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Krafters Games ·
+      <a href="mailto:vedatalpaydin@icloud.com">vedatalpaydin@icloud.com</a>
+    </footer>
+  </div>
+</body>
+</html>
